@@ -15,7 +15,7 @@
       <a href="#contact">Contact</a>
       <a
         href="/henendev-resume.pdf"
-        class="px-4 py-2 border border-primary text-primary hover:bg-primary/20 hover:text-darkGray transition-all duration-300 rounded cursor-pointer"
+        class="button-secondary"
         target="_blank"
         rel="noopener noreferrer">Resume</a
       >

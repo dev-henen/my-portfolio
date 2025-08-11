@@ -20,32 +20,24 @@
       performance and scalability.
     </p>
     <div class="flex space-x-4">
-      <span
-        class="px-6 py-3 bg-green-550 hover:bg-green-650 text-white rounded-md transition-all duration-300 flex items-center cursor-pointer"
-      >
-        View My Work <i class="ml-2" data-fa-i2svg=""
-          ><svg
-            class="svg-inline--fa fa-arrow-right"
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="arrow-right"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            data-fa-i2svg=""
-            ><path
-              fill="currentColor"
-              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
-            ></path></svg
-          ></i
+      <a href="#/work" class="button">
+        View My Work
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 ml-2"
         >
-      </span>
-      <span
-        class="px-6 py-3 border border-green-450 text-green-450 hover:bg-green-450 hover:text-darkGray rounded-md transition-all duration-300 cursor-pointer"
-      >
-        Contact Me
-      </span>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+          />
+        </svg>
+      </a>
+      <a href="#contact" class="button-secondary"> Contact Me </a>
     </div>
   </div>
 

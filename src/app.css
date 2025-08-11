@@ -27,4 +27,11 @@
         @apply max-w-7xl mx-auto mt-16 px-6 py-4;
     }
     
+    .button {
+        @apply px-6 py-3 bg-secondary font-bold hover:bg-green-500 text-white rounded-md transition-all duration-300 flex items-center cursor-pointer;
+    }
+
+    .button-secondary {
+        @apply font-bold px-4 py-2 border border-primary text-primary hover:bg-primary/20 transition-all duration-300 rounded cursor-pointer;
+    }
 }

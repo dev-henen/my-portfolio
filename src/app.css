@@ -10,7 +10,7 @@
 
 @layer base {
     html, body {
-        @apply bg-dark text-white font-sans bg-[url('/BackgroundTexture.svg')];
+        @apply bg-dark text-white font-sans;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -24,7 +24,7 @@
 
 @layer components {
     .container {
-        @apply max-w-7xl mx-auto my-16 px-6 py-4;
+        @apply max-w-7xl mx-auto mt-16 px-6 py-4;
     }
     
     .button {

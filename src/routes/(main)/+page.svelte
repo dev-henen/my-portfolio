@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="bg-[url('/BackgroundTexture.svg')] bg-fixed">
+<div class="bg-[url('/BackgroundTexture.svg')]">
   <div
     class="container relative flex flex-col md:flex-row items-center justify-between"
   >

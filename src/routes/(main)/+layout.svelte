@@ -1,4 +1,4 @@
-<div class="container mt-8">
+<div class="container mt-8 bg-[url('/BackgroundTexture.svg')]">
   <div class="flex justify-between items-center">
     <span
       class="text-xl font-mono font-bold text-primary tracking-wider cursor-pointer"

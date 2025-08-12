@@ -78,3 +78,140 @@
     </span>
   </div>
 </div>
+
+<section id="about">
+  <div class="container px-6">
+    <div class="flex flex-col md:flex-row items-center gap-16">
+      <div class="md:w-2/5">
+        <div class="relative">
+          <div
+            class="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg"
+          ></div>
+          <img
+            class="rounded-lg relative z-10"
+            src="/IMG_9650.png"
+            alt="professional software engineer working at desk with multiple screens showing code, side profile, dark office setting with green ambient lighting"
+          />
+        </div>
+      </div>
+
+      <div
+        class="md:w-3/5"
+      >
+        <h2 class="text-3xl font-bold mb-2 flex items-center">
+          <span class="text-green-450 font-mono mr-2">01.</span>
+          About Me
+        </h2>
+        <div class="w-20 h-1 bg-green-450 mb-6"></div>
+
+        <p class="text-gray-300 mb-4">
+          Hi! I am a passionate Software Engineer with 3 years of experience in
+          designing, developing, and managing web projects. Proficient in
+          JavaScript, TypeScript (Node.js, Express, SvelteKit), PHP (Laravel),
+          and HTML, CSS (Tailwind). Strong expertise in Object-Oriented
+          Programming (OOP) and skilled in leveraging various tools and
+          databases to build robust, scalable, and efficient solutions.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 mb-8 font-bold">
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-primary mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+
+            <span>Full-Stack Development</span>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-primary mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+
+            <span>Responsive Design</span>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-primary mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+
+            <span>API Development</span>
+          </div>
+          <div class="flex items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-primary mr-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 12.75 6 6 9-13.5"
+              />
+            </svg>
+
+            <span>Database Architecture</span>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <a
+            href="/resume.pdf"
+            class="button-secondary inline-flex items-center"
+            rel="noreferrer"
+            download
+          >
+            My Resume <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 text-primary ml-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,12 +1,18 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
-	import '../app.css';
+  import favicon from "$lib/assets/favicon.svg";
+  import "../app.css";
 
-	let { children } = $props();
+  let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+  <title>Moses Henen Developer — Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Jane Developer — Frontend engineer, UI/UX enthusiast, and open-source contributor."
+  />
+
+  <link rel="icon" href={favicon} />
 </svelte:head>
 
 {@render children?.()}

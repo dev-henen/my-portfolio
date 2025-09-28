@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Spendin Admin Dashboard",
+    "description": "Built and improved the admin dashboard for Spendin using SvelteKit, TypeScript, and Tailwind.",
+    "tags": ["React", "Next.js", "TypeScript", "Tailwind"],
+    "links": {
+      "demo": "https://spendin.webflow.io/",
+      "code": null
+    },
+    "image": null
+  },
+  {
+    "title": "Bit54/Monierate Products",
+    "description": "Developed key products at Bit54/Monierate, including the account system, API docs, price alert feature, and wallet system, all with SvelteKit, TypeScript, and Tailwind.",
+    "tags": ["SvelteKit", "TypeScript", "Tailwind"],
+    "links": {
+      "demo": "https://monierate.com",
+      "code": null
+    },
+    "image": null
+  },
+  {
+    "title": "Benue International Marathon",
+    "description": "Launched the Benue International Marathon registration site using Tailwind and PHP.",
+    "tags": ["Tailwind", "PHP", "HTML", "CSS"],
+    "links": {
+      "demo": "https://benueinternationalmarathon.com",
+      "code": null
+    },
+    "image": null
+  },
+  {
+    "title": "My Football News App",
+    "description": "Published the My Football News App with PHP, HTML, CSS, and a PWA version on Play Store.",
+    "tags": ["PHP", "HTML", "CSS", "PWA"],
+    "links": {
+      "demo": "https://www.mfeatures24.com.ng/",
+      "code": null
+    },
+    "image": null
+  }
+]

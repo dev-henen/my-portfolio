@@ -168,8 +168,7 @@
     <a href="#" class="text-sm text-brand hover:underline">View all →</a>
   </div>
   <p class="mt-2 text-gray-600 dark:text-gray-300 max-w-2xl">
-    Selected projects — screenshots are placeholders you can replace with real
-    images or links.
+    My latest projects and work experience.
   </p>
 
   <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

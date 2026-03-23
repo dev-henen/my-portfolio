@@ -1,18 +1,8 @@
 [
   {
-    "title": "Spendin Admin Dashboard",
-    "description": "Built and improved the admin dashboard for Spendin using SvelteKit, TypeScript, and Tailwind.",
-    "tags": ["React", "Next.js", "TypeScript", "Tailwind"],
-    "links": {
-      "demo": "https://spendin.webflow.io/",
-      "code": null
-    },
-    "image": null
-  },
-  {
-    "title": "Bit54/Monierate Products",
-    "description": "Developed key products at Bit54/Monierate, including the account system, API docs, price alert feature, and wallet system, all with SvelteKit, TypeScript, and Tailwind.",
-    "tags": ["SvelteKit", "TypeScript", "Tailwind"],
+    "title": "Monierate Dashboard",
+    "description": "Engineered the full frontend solo — API subscriptions, billing, usage analytics, wallet, and real-time alerts for 500+ clients.",
+    "tags": ["SvelteKit", "TypeScript", "Tailwind", "Vite"],
     "links": {
       "demo": "https://monierate.com",
       "code": null
@@ -20,21 +10,51 @@
     "image": null
   },
   {
-    "title": "Benue International Marathon",
-    "description": "Launched the Benue International Marathon registration site using Tailwind and PHP.",
-    "tags": ["Tailwind", "PHP", "HTML", "CSS"],
+    "title": "Spendin Admin Dashboard",
+    "description": "Delivered an 11-module fintech admin system with RBAC, KYC scheduling, multi-currency management, and bot-proof login.",
+    "tags": ["React", "Next.js", "TypeScript", "Tailwind"],
     "links": {
-      "demo": "https://benueinternationalmarathon.com",
+      "demo": "https://spendin.co",
       "code": null
     },
     "image": null
   },
   {
-    "title": "My Football News App",
-    "description": "Published the My Football News App with PHP, HTML, CSS, and a PWA version on Play Store.",
-    "tags": ["PHP", "HTML", "CSS", "PWA"],
+    "title": "Monierate Price Alert System",
+    "description": "Shipped a full-stack alert engine solo — custom rate triggers by currency, provider, and interval for 1,000+ active users.",
+    "tags": ["SvelteKit", "Node.js", "Express", "TypeScript"],
     "links": {
-      "demo": "https://www.mfeatures24.com.ng/",
+      "demo": "https://monierate.com/alerts",
+      "code": null
+    },
+    "image": null
+  },
+  {
+    "title": "StableRate",
+    "description": "Built a stablecoin rate aggregator — real-time data across major stablecoins, shipped independently as a standalone platform.",
+    "tags": ["SvelteKit", "TypeScript", "Tailwind"],
+    "links": {
+      "demo": "https://stablerate.app",
+      "code": null
+    },
+    "image": null
+  },
+  {
+    "title": "Everybitcoin",
+    "description": "Developed a global Bitcoin converter with live rates across 50+ currencies — responsive, mobile-first interface.",
+    "tags": ["SvelteKit", "TypeScript", "Tailwind"],
+    "links": {
+      "demo": "https://everybitcoin.co",
+      "code": null
+    },
+    "image": null
+  },
+  {
+    "title": "Benue International Marathon",
+    "description": "Delivered the Benue International Marathon registration platform end-to-end, supporting a 5,000+ runner event.",
+    "tags": ["PHP", "Tailwind", "HTML", "CSS"],
+    "links": {
+      "demo": "https://benueinternationalmarathon.com",
       "code": null
     },
     "image": null

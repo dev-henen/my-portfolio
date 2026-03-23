@@ -1,13 +1,22 @@
 [
-  "JavaScript",
-  "TypeScript",
-  "Node.js",
-  "Express",
-  "SvelteKit",
-  "React",
-  "Next.js",
-  "HTML",
-  "CSS",
-  "Tailwind",
-  "PHP"
+  {
+    "category": "Languages",
+    "items": ["JavaScript", "TypeScript", "PHP", "HTML", "CSS"]
+  },
+  {
+    "category": "Frontend",
+    "items": ["React.js", "Next.js", "Svelte 5", "SvelteKit", "Tailwind CSS", "Vite"]
+  },
+  {
+    "category": "Backend",
+    "items": ["Node.js", "Express.js", "REST APIs", "Database Design"]
+  },
+  {
+    "category": "Tools",
+    "items": ["Git", "GitHub", "Claude Code", "Generative AI", "Internet Security"]
+  },
+  {
+    "category": "Practices",
+    "items": ["OOP", "Performance Optimization", "Project Management", "UX Design"]
+  }
 ]

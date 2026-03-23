@@ -1,0 +1,54 @@
+[
+  {
+    "role": "Frontend Developer",
+    "company": "Neona Synergy",
+    "url": null,
+    "period": "Sep 2025 – Present",
+    "location": "Remote · Nigeria",
+    "current": true,
+    "highlights": [
+      "Delivered 11 admin dashboard modules (Users, Transactions, KYC, Cards, Push Notifications, OTC, and more) — reducing manual ops workload by ~30%",
+      "Hardened security via HTTP-only cookies and Cloudflare Turnstile — eliminated bot login attempts",
+      "Improved dashboard performance by 60% through optimized data loading and efficient pagination",
+      "Launched the Spendin marketing landing page in collaboration with UI/UX designer"
+    ]
+  },
+  {
+    "role": "Full-Stack Engineer",
+    "company": "Bit54",
+    "url": "https://monierate.com",
+    "period": "Oct 2024 – Present",
+    "location": "Remote",
+    "current": true,
+    "highlights": [
+      "Led frontend development of the Monierate Dashboard from zero — subscriptions, billing, API usage tracking, and wallet management serving 500+ clients",
+      "Shipped Bank USSD Code pages, Switch Code pages, and an on-site currency converter — 3 high-traffic utility features",
+      "Upgraded the entire Monierate codebase to Svelte 5, TypeScript, and Vite — improving build speed by ~35% and reducing bundle size",
+      "Delivered StableRate — a stablecoin rate aggregator — as a standalone production platform",
+      "Designed and shipped the full-stack Monierate Price Alert System solo, serving 1,000+ users",
+      "Architected Everybitcoin — a real-time Bitcoin converter across 50+ currencies"
+    ]
+  },
+  {
+    "role": "Web Developer",
+    "company": "Freelance",
+    "url": null,
+    "period": "Jan 2025 – Feb 2025",
+    "location": "Contract",
+    "current": false,
+    "highlights": [
+      "Delivered the Benue International Marathon registration platform end-to-end, supporting a 5,000+ runner event"
+    ]
+  },
+  {
+    "role": "Frontend Developer Intern",
+    "company": "Venture Tribes",
+    "url": null,
+    "period": "Jul 2024 – Sep 2024",
+    "location": "Remote · Nigeria",
+    "current": false,
+    "highlights": [
+      "Earned internship certification through structured frontend development training"
+    ]
+  }
+]

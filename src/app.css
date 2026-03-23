@@ -82,9 +82,13 @@
         background: linear-gradient(180deg, rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.45));
     }
 
-    /* small card shadow */
+    /* card shadow — subtler on dark */
     .card-shadow {
-        box-shadow: 0 12px 30px rgba(16, 24, 40, 0.06);
+        box-shadow: 0 4px 24px rgba(16, 24, 40, 0.07);
+    }
+
+    .dark .card-shadow {
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
     }
 }
 
@@ -92,6 +96,24 @@
     :root {
         --accent: #6D28D9;
         --muted: #6B7280;
+    }
+
+    @keyframes floaty {
+        0%, 100% { transform: translateY(0px); }
+        50%       { transform: translateY(-10px); }
+    }
+
+    @keyframes blink-cursor {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+    }
+
+    .animate-floaty {
+        animation: floaty 4s ease-in-out infinite;
+    }
+
+    .animate-blink {
+        animation: blink-cursor 1s step-end infinite;
     }
 
     /* accessible focus */

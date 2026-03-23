@@ -1,19 +1,39 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap');
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-primary: #6D28D9;
-    --color-secondary: #7C3AED;
-    --color-dark: #0f0f16;
+    /* Font families */
+    --font-sans:    "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-heading: "Sora", "Nunito", sans-serif;
+    --font-mono:    "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
+
+    /* Primary accent — cool indigo-blue replacing purple */
+    --color-primary:   #5b7cf9;
+    --color-secondary: #7b9bff;
+    --color-dark:      #080c1e;
+
+    /* Override the entire gray palette → cold blue-shifted tones
+       This automatically shifts every gray-* Tailwind class to the cold palette */
+    --color-gray-50:  #f0f3ff;
+    --color-gray-100: #e2e9ff;
+    --color-gray-200: #c5d0f0;
+    --color-gray-300: #96a8d4;
+    --color-gray-400: #6474a8;
+    --color-gray-500: #465080;
+    --color-gray-600: #323c68;
+    --color-gray-700: #202a50;
+    --color-gray-800: #131a3c;
+    --color-gray-900: #0c1228;
+    --color-gray-950: #080c1e;
 }
 
 @layer base {
 
     html,
     body {
-        @apply font-sans bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+        @apply font-sans bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-gray-100;
     }
 
     html {
@@ -21,7 +41,13 @@
     }
 
     body {
-        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        font-family: var(--font-sans);
+    }
+
+    /* subtle radial glow on dark background */
+    :where(.dark) body {
+        background-image: radial-gradient(ellipse 80% 50% at 15% 0%, rgba(15, 24, 65, 0.9) 0%, transparent 70%),
+                          radial-gradient(ellipse 60% 40% at 85% 80%, rgba(10, 18, 50, 0.6) 0%, transparent 60%);
     }
 
     html,
@@ -61,7 +87,7 @@
     nav,
     section,
     summary {
-        @apply transition-colors duration-1000;
+        @apply transition-colors duration-700;
     }
 
     a {
@@ -71,31 +97,78 @@
 
 @layer components {
 
-    /* Small polished touches */
+    /* Frosted glass — cold blue tint */
     .glass {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
-        backdrop-filter: blur(8px);
+        background: linear-gradient(180deg, rgba(240, 244, 255, 0.80), rgba(226, 234, 255, 0.70));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
 
-    /* fallback for dark glass */
     .dark .glass {
-        background: linear-gradient(180deg, rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.45));
+        background: linear-gradient(180deg, rgba(10, 16, 44, 0.82), rgba(8, 12, 30, 0.76));
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
 
-    /* card shadow — subtler on dark */
+    /* Soft material card shadow — light mode */
     .card-shadow {
-        box-shadow: 0 4px 24px rgba(16, 24, 40, 0.07);
+        box-shadow:
+            0 1px 3px  rgba(30, 50, 120, 0.06),
+            0 6px 20px rgba(30, 50, 120, 0.08),
+            0 0 0 1px  rgba(91, 124, 249, 0.07);
     }
 
+    /* Puffy depth shadow — dark mode (the "fluffy skin" effect) */
     .dark .card-shadow {
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+        box-shadow:
+            0 2px 6px  rgba(0, 0, 24, 0.45),
+            0 10px 36px rgba(0, 0, 36, 0.55),
+            0 0 0 1px  rgba(91, 124, 249, 0.10),
+            inset 0 1px 0 rgba(160, 190, 255, 0.05);
+    }
+
+    /* Pressed/hover lift with deeper glow */
+    .card-lift {
+        transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .card-lift:hover {
+        transform: translateY(-5px);
+        box-shadow:
+            0 4px 10px  rgba(0, 0, 24, 0.50),
+            0 20px 56px rgba(0, 8, 40, 0.65),
+            0 0 0 1px   rgba(91, 124, 249, 0.18),
+            inset 0 1px 0 rgba(160, 190, 255, 0.08);
+    }
+
+    .dark .card-lift:hover {
+        transform: translateY(-5px);
+        box-shadow:
+            0 4px 10px  rgba(0, 0, 24, 0.50),
+            0 20px 56px rgba(0, 8, 40, 0.65),
+            0 0 0 1px   rgba(91, 124, 249, 0.18),
+            inset 0 1px 0 rgba(160, 190, 255, 0.08);
+    }
+
+    /* Pill/badge — frosted cool blue */
+    .badge-cool {
+        @apply px-2.5 py-1 rounded-full text-xs font-semibold;
+        background: rgba(91, 124, 249, 0.10);
+        border: 1px solid rgba(91, 124, 249, 0.20);
+        color: #7b9bff;
+    }
+
+    .dark .badge-cool {
+        background: rgba(91, 124, 249, 0.12);
+        border-color: rgba(91, 124, 249, 0.22);
+        color: #9ab4ff;
     }
 }
 
 @layer utilities {
     :root {
-        --accent: #6D28D9;
-        --muted: #6B7280;
+        --accent: #5b7cf9;
+        --muted:  #465080;
     }
 
     @keyframes floaty {
@@ -108,6 +181,11 @@
         50%       { opacity: 0; }
     }
 
+    @keyframes soft-glow {
+        0%, 100% { box-shadow: 0 0 0 0 rgba(91, 124, 249, 0.25); }
+        50%       { box-shadow: 0 0 0 10px rgba(91, 124, 249, 0); }
+    }
+
     .animate-floaty {
         animation: floaty 4s ease-in-out infinite;
     }
@@ -116,9 +194,13 @@
         animation: blink-cursor 1s step-end infinite;
     }
 
-    /* accessible focus */
+    .animate-soft-glow {
+        animation: soft-glow 2.5s ease-in-out infinite;
+    }
+
+    /* accessible focus — cool blue ring */
     :focus {
-        outline: 2px solid rgba(99, 102, 241, 0.15);
+        outline: 2px solid rgba(91, 124, 249, 0.25);
         outline-offset: 2px;
     }
 }
